@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CAA7A7F41C7A419C00570C2E /* ProfilePage.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA7A7F31C7A419C00570C2E /* ProfilePage.m */; };
 		CAEE53C61C70B717000B3C34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CAEE53C51C70B717000B3C34 /* main.m */; };
 		CAEE53C91C70B717000B3C34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAEE53C81C70B717000B3C34 /* AppDelegate.m */; };
 		CAEE53CC1C70B717000B3C34 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAEE53CB1C70B717000B3C34 /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CAA7A7F21C7A419C00570C2E /* ProfilePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfilePage.h; sourceTree = "<group>"; };
+		CAA7A7F31C7A419C00570C2E /* ProfilePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfilePage.m; sourceTree = "<group>"; };
 		CAEE53C01C70B717000B3C34 /* Amogh login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Amogh login.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAEE53C41C70B717000B3C34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAEE53C51C70B717000B3C34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 				CAEE53C81C70B717000B3C34 /* AppDelegate.m */,
 				CAEE53CA1C70B717000B3C34 /* ViewController.h */,
 				CAEE53CB1C70B717000B3C34 /* ViewController.m */,
+				CAA7A7F21C7A419C00570C2E /* ProfilePage.h */,
+				CAA7A7F31C7A419C00570C2E /* ProfilePage.m */,
 				CAEE53CD1C70B717000B3C34 /* Main.storyboard */,
 				CAEE53D01C70B717000B3C34 /* Images.xcassets */,
 				CAEE53D21C70B717000B3C34 /* LaunchScreen.xib */,
@@ -221,6 +226,7 @@
 			files = (
 				CAEE53CC1C70B717000B3C34 /* ViewController.m in Sources */,
 				CAEE53C91C70B717000B3C34 /* AppDelegate.m in Sources */,
+				CAA7A7F41C7A419C00570C2E /* ProfilePage.m in Sources */,
 				CAEE53C61C70B717000B3C34 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +424,7 @@
 				CAEE53E51C70B717000B3C34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CAEE53E61C70B717000B3C34 /* Build configuration list for PBXNativeTarget "Amogh loginTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +433,7 @@
 				CAEE53E81C70B717000B3C34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
