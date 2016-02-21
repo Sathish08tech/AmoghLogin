@@ -28,6 +28,8 @@
     self.passwordTxtFld.delegate = self;
 }
 
+//Text Fields delegate methods:
+
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
     [textField resignFirstResponder];
