@@ -302,6 +302,7 @@
                     <navigationItem key="navigationItem" title="Sigin In Page" id="Ewv-9F-9lw"/>
                     <connections>
                         <outlet property="passwordTxtFld" destination="Fne-Ar-Fmi" id="nyb-kA-OyD"/>
+                        <outlet property="signinPressed" destination="zMy-Nj-gdY" id="GkK-vr-rwE"/>
                         <outlet property="userNameTxtFld" destination="Imm-JJ-PeO" id="WHX-Ef-ZoQ"/>
                     </connections>
                 </viewController>
@@ -309,10 +310,10 @@
             </objects>
             <point key="canvasLocation" x="1970" y="339"/>
         </scene>
-        <!--View Controller-->
+        <!--Registration View Controller-->
         <scene sceneID="ljZ-Sv-pde">
             <objects>
-                <viewController id="r0q-MA-usu" sceneMemberID="viewController">
+                <viewController id="r0q-MA-usu" customClass="RegistrationViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8Ur-vA-qBE"/>
                         <viewControllerLayoutGuide type="bottom" id="031-5n-GgP"/>
@@ -389,6 +390,9 @@
                                         <exclude reference="4K5-ek-7RE"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="signup:" destination="r0q-MA-usu" eventType="touchUpInside" id="iYF-Tp-e1n"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HB4-qN-oYg">
                                 <rect key="frame" x="200" y="483" width="200" height="40"/>
@@ -613,6 +617,11 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="addressTxtField" destination="dTU-GU-WNU" id="vCW-ua-RBx"/>
+                        <outlet property="emailTxtField" destination="8K7-Gv-4x6" id="yQX-Aj-3Jf"/>
+                        <outlet property="nameTxtField" destination="M36-2Q-X8c" id="owb-yT-kZs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0wO-vr-0Gm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA998BE01C7B74F800F49EC2 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA998BDF1C7B74F800F49EC2 /* RegistrationViewController.m */; };
+		CA998BE21C7B771900F49EC2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA998BE11C7B771900F49EC2 /* CoreData.framework */; };
+		CA998BE51C7B775C00F49EC2 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA998BE31C7B775C00F49EC2 /* Model.xcdatamodeld */; };
 		CAA7A7F41C7A419C00570C2E /* ProfilePage.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA7A7F31C7A419C00570C2E /* ProfilePage.m */; };
+		CAAD009D1C83220900E6170E /* NewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAAD009C1C83220900E6170E /* NewViewController.m */; };
 		CAEE53C61C70B717000B3C34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CAEE53C51C70B717000B3C34 /* main.m */; };
 		CAEE53C91C70B717000B3C34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAEE53C81C70B717000B3C34 /* AppDelegate.m */; };
 		CAEE53CC1C70B717000B3C34 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAEE53CB1C70B717000B3C34 /* ViewController.m */; };
@@ -28,8 +32,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA998BDE1C7B74F800F49EC2 /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationViewController.h; sourceTree = "<group>"; };
+		CA998BDF1C7B74F800F49EC2 /* RegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrationViewController.m; sourceTree = "<group>"; };
+		CA998BE11C7B771900F49EC2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CA998BE41C7B775C00F49EC2 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		CAA7A7F21C7A419C00570C2E /* ProfilePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfilePage.h; sourceTree = "<group>"; };
 		CAA7A7F31C7A419C00570C2E /* ProfilePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfilePage.m; sourceTree = "<group>"; };
+		CAAD009B1C83220900E6170E /* NewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewViewController.h; sourceTree = "<group>"; };
+		CAAD009C1C83220900E6170E /* NewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewViewController.m; sourceTree = "<group>"; };
 		CAEE53C01C70B717000B3C34 /* Amogh login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Amogh login.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAEE53C41C70B717000B3C34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAEE53C51C70B717000B3C34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -50,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA998BE21C7B771900F49EC2 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +77,7 @@
 		CAEE53B71C70B717000B3C34 = {
 			isa = PBXGroup;
 			children = (
+				CA998BE11C7B771900F49EC2 /* CoreData.framework */,
 				CAEE53C21C70B717000B3C34 /* Amogh login */,
 				CAEE53DC1C70B717000B3C34 /* Amogh loginTests */,
 				CAEE53C11C70B717000B3C34 /* Products */,
@@ -88,11 +100,16 @@
 				CAEE53C81C70B717000B3C34 /* AppDelegate.m */,
 				CAEE53CA1C70B717000B3C34 /* ViewController.h */,
 				CAEE53CB1C70B717000B3C34 /* ViewController.m */,
+				CA998BDE1C7B74F800F49EC2 /* RegistrationViewController.h */,
+				CA998BDF1C7B74F800F49EC2 /* RegistrationViewController.m */,
+				CAAD009B1C83220900E6170E /* NewViewController.h */,
+				CAAD009C1C83220900E6170E /* NewViewController.m */,
 				CAA7A7F21C7A419C00570C2E /* ProfilePage.h */,
 				CAA7A7F31C7A419C00570C2E /* ProfilePage.m */,
 				CAEE53CD1C70B717000B3C34 /* Main.storyboard */,
 				CAEE53D01C70B717000B3C34 /* Images.xcassets */,
 				CAEE53D21C70B717000B3C34 /* LaunchScreen.xib */,
+				CA998BE31C7B775C00F49EC2 /* Model.xcdatamodeld */,
 				CAEE53C31C70B717000B3C34 /* Supporting Files */,
 			);
 			path = "Amogh login";
@@ -173,6 +190,7 @@
 				TargetAttributes = {
 					CAEE53BF1C70B717000B3C34 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 59774FUT2G;
 					};
 					CAEE53D81C70B717000B3C34 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -224,10 +242,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAAD009D1C83220900E6170E /* NewViewController.m in Sources */,
 				CAEE53CC1C70B717000B3C34 /* ViewController.m in Sources */,
 				CAEE53C91C70B717000B3C34 /* AppDelegate.m in Sources */,
+				CA998BE01C7B74F800F49EC2 /* RegistrationViewController.m in Sources */,
 				CAA7A7F41C7A419C00570C2E /* ProfilePage.m in Sources */,
 				CAEE53C61C70B717000B3C34 /* main.m in Sources */,
+				CA998BE51C7B775C00F49EC2 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,9 +376,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Amogh login/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -365,9 +389,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Amogh login/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -436,6 +463,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CA998BE31C7B775C00F49EC2 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CA998BE41C7B775C00F49EC2 /* Model.xcdatamodel */,
+			);
+			currentVersion = CA998BE41C7B775C00F49EC2 /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = ../Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CAEE53B81C70B717000B3C34 /* Project object */;
 }

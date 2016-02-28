@@ -7,17 +7,32 @@
 //
 
 #import "ViewController.h"
+#import <CoreData/CoreData.h>
 
 @interface ViewController ()<UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *userNameTxtFld;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTxtFld;
+@property (nonatomic, strong) NSMutableArray *userInfo;
 
 - (IBAction)signPressed:(id)sender;
 
 @end
 
 @implementation ViewController
+
+-(NSManagedObjectContext *)managedObjectContext
+{
+    NSManagedObjectContext *context = nil;
+    
+    id delegate = [[UIApplication sharedApplication] delegate];
+    
+    if ([delegate performSelector:@selector(managedObjectContext)]) {
+        context = [delegate managedObjectContext];
+    }
+    
+    return context;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -48,6 +63,10 @@
 
 - (IBAction)signPressed:(id)sender {
     
+    NSManagedObjectContext *context = [self managedObjectContext];
     
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"User"];
+    self.userInfo = [[context executeFetchRequest:fetchRequest error:nil] mutableCopy];
+    NSLog(@"%@", self.userInfo);
 }
 @end
